@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Page</title>
+    <link rel="stylesheet" href="assignment.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Assignment Page</h1>
+        <div class="search-container">
+            <label for="search-input">Search:</label>
+            <input type="text" id="search-input" placeholder="Enter student name...">
+        </div>
+        <div class="filters-container">
+            <div class="marks-filter">
+                <label for="marks-input">Marks Obtained:</label>
+                <input type="number" id="marks-input" placeholder="Enter minimum marks...">
+            </div>
+            <div class="date-filters">
+                <label for="start-date">Start Date:</label>
+                <input type="date" id="start-date">
+                <label for="end-date">End Date:</label>
+                <input type="date" id="end-date">
+            </div>
+        </div>
+        <div class="student-details-container">
+            <div id="student-details">
+                <table id="assignment-table">
+                    <tr>
+                        <th>s.no</th>
+                        <th>Student Name</th>
+                        <th>Submission Date</th>
+                        <th>Marks Obtained</th>
+                        <th>Total Assignments Submitted</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="add-student">
+            <h2>Add New Student</h2>
+            <button id="add-student-btn">Add New Student</button>
+            <form id="add-student-form" style="display: none;">
+                <label for="new-student-name">Student Name:</label>
+                <input type="text" id="new-student-name" required><br><br>
+                <label for="new-student-date">Submission Date:</label>
+                <input type="date" id="new-student-date" required><br><br>
+                <label for="new-student-marks">Marks Obtained:</label>
+                <input type="number" id="new-student-marks" required><br><br>
+                <label for="new-student-total">Total Assignments Submitted:</label>
+                <input type="number" id="new-student-total" required><br><br>
+                <button type="submit">Add Student</button>
+            </form>
+        </div>
+    </div>
+    <div id="edit-form" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Edit Student Information</h2>
+            <form id="edit-form-content">
+                <label for="edit-name">Name:</label>
+                <input type="text" id="edit-name" name="edit-name"><br><br>
+                <label for="edit-date">Submission Date:</label>
+                <input type="text" id="edit-date" name="edit-date"><br><br>
+                <label for="edit-marks">Marks Obtained:</label>
+                <input type="number" id="edit-marks" name="edit-marks"><br><br>
+                <label for="edit-total">Total Assignments Submitted:</label>
+                <input type="number" id="edit-total" name="edit-total"><br><br>
+                <button type="button" id="edit-submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <footer style="background-color: #ffffff; padding: 10px; text-align: center; border-top: 1px solid #e7e7e7;">
+        <div style="max-width: 1200px; margin: auto;">
+            <p style="margin: 0;">&copy; This Sheet Has Been Created By SS For @ASSIGNMENT.</p>
+        </div>
+    </footer>
+    <script src="assignment.js"></script>
+</body>
+
+</html>

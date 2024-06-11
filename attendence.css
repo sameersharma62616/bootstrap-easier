@@ -1,0 +1,256 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+/* Button styles */
+.button-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Inline-block display */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 12px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Table styles */
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse; /* Ensure borders collapse into a single border */
+    margin: 20px 0;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+}
+
+.attendance-table th, .attendance-table td {
+    border: 1px solid #ddd; /* Add borders to all table cells */
+    padding: 10px; /* Adjust the padding as needed */
+    text-align: left; /* Align text to the left */
+    background-color: #fff; /* White background for cells */
+}
+
+.attendance-table th {
+    background-color: #4CAF50; /* Green background for header */
+    color: white; /* White text for header */
+}
+
+.attendance-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light grey background for even rows */
+}
+
+.attendance-table tr:hover {
+    background-color: #f1f1f1; /* Slightly darker background on hover */
+}
+
+.editable-cell {
+    cursor: pointer; /* Indicate that cells are editable */
+}
+
+.editable-cell:focus {
+    outline: none; /* Remove outline when cell is focused */
+    border: 1px solid #4CAF50; /* Add green border when focused */
+    background-color: #eaffea; /* Light green background when focused */
+}
+
+
+
+.table-container {
+    overflow-x: auto;
+    position: relative;
+}
+
+.attendance-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.attendance-table th, .attendance-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.attendance-table th {
+    position: sticky;
+    top: 0;
+    background-color: #f2f2f2;
+    z-index: 1;
+}
+
+.fixed-column {
+    position: sticky;
+    left: 0;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.counter-cell {
+    font-weight: bold;
+}
+
+.button-container {
+    margin-top: 10px;
+}
+
+.button-container .btn {
+    margin-right: 5px;
+}
+
+
+
+/* General styling for decorate*/
+h1 {
+    text-align: center;
+    color: #2575fc;
+}
+
+/* Button styles */
+.button-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #3c84ff; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 10px; /* Padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Inline-block display */
+    font-size: 12px; /* Font size */
+    margin: 4px 2px; /* Margin */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 12px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background and transform */
+}
+
+.btn:hover {
+    background-color: #327cfc; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+/* Table styles */
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse; /* Ensure borders collapse into a single border */
+    margin: 20px 0;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+}
+
+.attendance-table th, .attendance-table td {
+    border: 1px solid #ddd; /* Add borders to all table cells */
+    padding: 10px; /* Adjust the padding as needed */
+    text-align: left; /* Align text to the left */
+    background-color: #fff; /* White background for cells */
+}
+
+.attendance-table th {
+    background-color: #196bfa; /* Green background for header */
+    color: white; /* White text for header */
+}
+
+.attendance-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light grey background for even rows */
+}
+
+.attendance-table tr:hover {
+    background-color: #f1f1f1; /* Slightly darker background on hover */
+}
+
+.editable-cell {
+    cursor: pointer; /* Indicate that cells are editable */
+}
+
+.editable-cell:focus {
+    outline: none; /* Remove outline when cell is focused */
+    border: 1px solid #4CAF50; /* Add green border when focused */
+    background-color: #eaffea; /* Light green background when focused */
+}
+
+
+/* here is the css for percentage  */
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid #d1d1d1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    width: 100px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.div2{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.divvvvvv{
+    background-color: #007bff;
+}
